@@ -43,7 +43,7 @@ def max_index(X):
         raise  ValueError("Input must be a numpy array")
     if X.ndim != 2:
         raise ValueError("The shape is not 2D")
-    flat_index= np.argmax(X)
+    flat_index = np.argmax(X)
     i, j = np.unravel_index(flat_index, X.shape)
     return i, j
 def wallis_product(n_terms):
